@@ -37,20 +37,43 @@
   </header>
   <main class="page-main">
     <h1 class="catalog-title">Каталог продукции</h1>
-    <section>
+    <section class="products">
       <h2 class="visually-hidden">Карточки товаров</h2>
-      <div class="card-product">
-        <ul class="card-product__list">
-          <li class="card-product__item">
-            <a href="#">Cat Energy PRO 500 г</a>
-            <p class="card-product_mass">Масса</p>
-            <p class="card-product_mass">500 г.</p>
-            <p class="card-product_flavor">Вкус</p>
-            <p class="card-product_flavor">Курица</p>
-            <p class="card-product_price">Цена</p>
-            <p class="card-product_price">700 Р.</p>
-            <a class="card-product__button">Заказать</a>
-          </li>
+      <ul class="products__list">
+        <li class="products__item product">
+          <article class="products__card">
+            <a href="#">
+              <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 500 г">
+            </a>
+            <a href="#">
+              Cat Energy PRO 500 г
+            </a>
+            <ul class="product__feature-list">
+              <li class="product__feature-item">
+                <p>Масса</p>
+              </li>
+              <li class="product__feature-item">
+                <p>500 г.</p>
+              </li>
+              <li class="product__feature-item">
+                <p>Вкус</p>
+              </li>
+              <li class="product__feature-item">
+                <p>Курица</p>
+              </li>
+              <li class="product__feature-item">
+                <p>Цена</p>
+              </li>
+              <li class="product__feature-item">
+                <p>700 Р.</p>
+              </li>
+            </ul>
+            <a class="product__button">
+              Заказать
+            </a>
+          </article>
+        </li>
+
           <li class="card-product__item">
             <a href="#">
               <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 1000 г">
@@ -139,7 +162,7 @@
           <a class="hidden-products__button">Показать все</a>
         </div>
       </div>
-    </section>
+      </article>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo" href="#">
@@ -150,15 +173,18 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#" aria-label="Вконтакте">
-              <img src="https://via.placeholder.com/150x150" width="23" height="16" alt="Вконтакте"></a>
+              <img src="https://via.placeholder.com/150x150" width="23" height="16" alt="Вконтакте">
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
-              <img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Инстаграм"></a>
+              <img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Инстаграм">
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
-              <img src="https://via.placeholder.com/150x150" width="12" height="22" alt="Фейсбук"></a>
+              <img src="https://via.placeholder.com/150x150" width="12" height="22" alt="Фейсбук">
+            </a>
           </li>
         </ul>
     </div>
