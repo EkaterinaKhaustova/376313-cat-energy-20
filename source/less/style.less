@@ -1,7 +1,27 @@
+@import url(blocks/site-list.less);
+@import url(blocks/choose-a-program.less);
+@import url(blocks/programs-for-cats.less);
+@import url(blocks/advantages.less);
+@import url(blocks/page-footer.less);
+
+
 .page__body {
-  background-color: #E5E5E5;
-  font-family: Oswald, Arial;
+  background-color: #ffffff;
+  font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
