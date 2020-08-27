@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подбор программы</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="191" height="37" alt="Логотип магазин Кэт энерджи">
+      <img src="img/logo-mobile.svg" width="191" height="37" alt="Логотип магазин Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -35,32 +37,121 @@
       </div>
     </nav>
   </header>
+  <main class="page-main">
+    <section class="form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-input">
+          <p class="form-name">
+            <label class="text-label" for="cat-name">Имя:*</label>
+            <input class="cat-name-icon" id="cat-name" type="text" name="name" placeholder="Барсик">
+          </p>
+          <p class="form-email">
+            <label class="text-label" for="cat-weight">Вес (кг):*</label>
+            <input class="cat-weight-icon" id="cat-weight" type="number" name="number" placeholder="7">
+          </p>
+          <p class="form-email">
+            <label class="text-label" for="car-age">Возвраст (лет):</label>
+            <input class="car-age-icon" id="car-age" type="number" name="number" placeholder="7">
+          </p>
+        </div>
+        <fieldset class="form-radio">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <ul class="form-radio__list">
+            <li class="form-radio__item">
+              <input class="visually-hidden form-radio__input" id="form-slimming" type="radio" name="option" value="slimming" checked disabled>
+              <label class="radio" for="form-slimming">Похудение</label>
+            </li>
+            <li class="form-radio__item">
+              <input class="visually-hidden form-radio__input" id="form-weight-gain" type="radio" name="weight-gain" value="fixed">
+              <label class="radio" for="form-weight-gain">Набор массы</label>
+            </li>
+            <li class="form-radio__item">
+              <input class="visually-hidden form-radio__input" id="form-advice" type="radio" name="advice" value="rubber">
+              <label class="radio" for="form-advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form-contacts">
+          <h2 class="form-contacts__title">Контактные данные (владельца кота)</h2>
+          <p class="form-email">
+            <label class="text-label" for="user-email">E-mail:</label>
+            <input class="email-icon-user" id="user-email" type="email" name="email" placeholder="кuklachev@gmail.com">
+          </p>
+          <p class="form-tel">
+            <label class="text-label" for="user-tel">Телефон:</label>
+            <input class="tel-icon-user" id="user-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+          </p>
+        </div>
+        <div class="form-message">
+          <h2 class="form-message__title">Комментарий</h2>
+          <p class="form-message__text">
+            <label class="text-label" for="user-text"></label>
+            <textarea class="text-icon-user" name="text" id="user-text" cols="98" rows="7" required>Расскажите обо всех повадках кота</textarea>
+          </p>
+        </div>
+        <fieldset class="form-checkbox">
+          <legend class="form-checkbox__title">Дополнительно:</legend>
+          <ul class="form-checkbox__list">
+            <li class="form-checkbox__item">
+              <input class="visually-hidden form-checkbox-input" id="form-sugar-substituter" type="checkbox" name="sugar-substituter" checked disabled>
+              <label class="checkbox" for="form-sugar-substituter">Сахарозаменитель</label>
+            </li>
+            <li class="form-checkbox__item">
+              <input class="visually-hidden form-checkbox-input" id="form-milk" type="checkbox" name="milk">
+              <label class="checkbox" for="form-milk">Молоко</label>
+            </li>
+            <li class="form-checkbox__item">
+              <input class="visually-hidden form-checkbox-input" id="form-water" type="checkbox" name="water" checked>
+              <label class="checkbox" for="form-water">Питьевая вода</label>
+            </li>
+            <li class="form-checkbox__item">
+              <input class="visually-hidden form-checkbox-input" id="form-vitamins" type="checkbox" name="vitamins">
+              <label class="checkbox" for="form-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button-form" type="submit">Отправить заявку</button>
+        <p class="field">* — Обязательные поля</p>
+      </form>
+    </section>
+  </main>
   <footer class="page-footer">
+    <div class="page-footer__contacts contacts">
+      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <div class="page-footer-map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300309!2d30.32085871611446!3d59.9387191690542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1597128289069!5m2!1sru!2sru" width="320" height="362" frameborder="0" aria-hidden="false" tabindex="0"></iframe>
+    </div>
     <a class="page-footer__logo" href="#">
-      <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип магазин Кэт энерджи">
+      <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазин Кэт энерджи">
     </a>
     <div class="page-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#" aria-label="Вконтакте">
-              <img src="https://via.placeholder.com/150x150" width="23" height="16" alt="Вконтакте">
+              <img src="img/icon-vk.svg" width="23" height="16" alt="Вконтакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
-              <img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Инстаграм">
+              <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
-              <img src="https://via.placeholder.com/150x150" width="12" height="22" alt="Фейсбук">
+              <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
             </a>
           </li>
         </ul>
     </div>
-    <div class="page-footer__copyright copyright--img">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
     </div>
   </footer>
 </body>
