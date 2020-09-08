@@ -1,25 +1,109 @@
 .select-program {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
   color: @basic-white-color;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black-color;
+    background-color: white;
+  }
+}
+
+.select-program__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    /*padding-left: 80px;*/
+  }
 }
 
 .select-program__title {
+  width: 249px;
+  margin: 0 auto;
+  padding-top: 27px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin: 0;
+    /*padding-top: 62px;*/
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .select-program__text {
+  margin: 0 auto;
   line-height: 14px;
   padding-top: 25px;
+  padding-bottom: 29px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 41px;
+    text-align: left;
+    margin: 0;
+    padding-left: 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 52px;
+    padding-left: 80px;
+  }
+}
+
+.select-program__img {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
 }
 
 .select-program__button {
+  margin: 0 auto;
   line-height: 18px;
   text-transform: uppercase;
   color: @basic-white-color;
   text-decoration: none;
+  height: 32px;
+  width: 280px;
+  padding-top: 8px;
+  background-color: @basic_green-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    height: 36px;
+    width: 244px;
+    text-align: center;
+    margin: 0;
+    padding-top: 14px;
+    margin-left: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }

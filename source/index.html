@@ -43,26 +43,29 @@
       <div class="select-program__wrapper">
         <h2 class="select-program__title">Функциональное питание для котов</h2>
         <p class="select-program__text">Занялся собой? Займись котом!</p>
+        <img class="select-program__img" src="img/index-can-mobile@1x.png" alt="Питание для котов">
         <a class="select-program__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы для котов</h2>
-      <ul class="programs__list">
-        <li class="programs__item slimming">
-          <h3 class="slimming__title">Похудение</h2>
-          <p class="slimming__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="slimming__link" href="#">каталог slim</a>
-        </li>
-        <li class="programs__item weight-gain">
-          <h3 class="weight-gain__title">Набор массы</h2>
-            <p class="weight-gain_text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="weight-gain__link" href="#">каталог pro</a>
-        </li>
+      <div class="programs__wrapper">
+        <ul class="programs__list">
+          <li class="programs__item slimming">
+            <h3 class="slimming__title">Похудение</h2>
+            <p class="slimming__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="slimming__link" href="#">каталог slim</a>
+          </li>
+          <li class="programs__item weight-gain">
+            <h3 class="weight-gain__title">Набор массы</h2>
+              <p class="weight-gain_text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="weight-gain__link" href="#">каталог pro</a>
+          </li>
+        </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title">Как это работает</h2>
       <div class="advantages__wrapper">
+        <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--useful">
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -80,51 +83,53 @@
       </div>
     </section>
     <section class="stats">
-      <header class="stats-header">
-        <h2 class="stats__title">Живой пример</h2>
-        <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      </header>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__number">
-            5 кг
-          </dt>
-          <dd class="stats__description">
-            снижение<br>
-            веса
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            60 дней
-          </dt>
-          <dd class="stats__description">
-            затрачено<br>
-            времени
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            15 000 руб.
-          </dt>
-          <dd class="stats__description">
-            затраты на питание
-          </dd>
-        </div>
-      </dl>
-      <div class="stats-range">
-        <img src="img/before-mobile@1x.png" width="311" height="232" alt="Кот">
-        <div class="range">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+      <div class="stats__wrapper">
+        <header class="stats-header">
+          <h2 class="stats__title">Живой пример</h2>
+          <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        </header>
+        <dl class="stats__list">
+          <div class="stats__item">
+            <dt class="stats__number">
+              5 кг
+            </dt>
+            <dd class="stats__description">
+              снижение<br>
+              веса
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__number">
+              60 дней
+            </dt>
+            <dd class="stats__description">
+              затрачено<br>
+              времени
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__number">
+              15 000 руб.
+            </dt>
+            <dd class="stats__description">
+              затраты на питание
+            </dd>
+          </div>
+        </dl>
+        <div class="stats-range">
+          <img class="stats-img" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот">
+          <div class="range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <button class="range-controls__toggle" type="button">
+                <span class="be">Было</span>
+              </button>
+              <button class="range-controls__toggle" type="button">
+                <span class="so">Стало</span>
+              </button>
             </div>
-            <button class="range-controls__toggle" type="button">
-              <span class="be">Было</span>
-            </button>
-            <button class="range-controls__toggle" type="button">
-              <span class="so">Стало</span>
-            </button>
           </div>
         </div>
       </div>
